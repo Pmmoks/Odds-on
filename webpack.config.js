@@ -24,7 +24,7 @@ For something that isn't going to be 'required/imported' in but still neds to be
   output: {
 /* We weant to give our output file a path, so the path.resolve command (below) tells webpack to put the output file (bundle.js) into the build directory inside the src sub-directory
 */
-    path: path.resolve('build/src/'),
+    path: path.resolve('public/'),
 /* publicPath key tells webpack where the output file (bundle.js) will be served up from on the webserver
 
 We set publicPath to the directory where output file will be on the webserver - which should match the setting we put into the index.html file where we told it to look for the output file (bundle.js)

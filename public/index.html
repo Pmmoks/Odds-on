@@ -1,12 +1,25 @@
+<!DOCTYPE! html>
 <html>
   <head>
-    <title>Simple Map</title>
+    <title>Odds-On</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
   </head>
   <body>
     <div id='app'>
     </div>
-    <script src='/public/assets/src/bundle.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDKtlY-yyAJ_FZN_jrgMVAhPoqiFldHu0I",
+        authDomain: "odds-on-45863.firebaseapp.com",
+        databaseURL: "https://odds-on-45863.firebaseio.com",
+        storageBucket: "odds-on-45863.appspot.com",
+        messagingSenderId: "516982315978"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src='bundle.js'></script>
   </body>
 </html>

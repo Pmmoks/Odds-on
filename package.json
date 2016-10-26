@@ -5,6 +5,7 @@
   "version": "0.0.0",
   "main": "./app.jsx",
   "scripts": {
+    "build": "webpack -p",
     "start": "webpack-dev-server",
     "test": "./node_modules/karma/bin/karma start karma.conf.js"
   },
