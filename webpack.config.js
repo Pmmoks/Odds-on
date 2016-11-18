@@ -92,7 +92,7 @@ A loader is just a file that exports a function. The compiler calls this functio
         {
           test:[/\.scss$/],
           exclude: /node_modules/,
-          loaders: ['style', 'css', 'sass']
+          loaders: ['style', 'css?modules', 'sass?modules']
         }
     ]
   },
