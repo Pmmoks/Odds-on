@@ -1,9 +1,19 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { render } from 'react-dom'
+import { Router, Route, hashHistory } from 'react-router'
 
-import App from './app.jsx'
+import LandingPage from './LandingPage.jsx'
+import App from './App.jsx'
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
+const Sample = () => (<h1>React Router is working.</h1>)
+const Example = () => (<h1>React Router is really working!</h1>)
+
+render((
+  <Router history={hashHistory}>
+    <Route path="/landing" component={LandingPage} />
+    <Route path="/" component={App} />
+    <Route path="/sample" component={Sample} />
+    <Route path="/example" component={Example} />
+  </Router>
+), document.getElementById('app')
 )
